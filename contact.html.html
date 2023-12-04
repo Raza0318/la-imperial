@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     
+
+
+    <style>
+
+        @media(max-width:335px)
+
+        {
+#header
+{
+    font-size: 30px;
+}
+        }
+        @media(max-width:988px)
+
+{
+    .fdiv
+    {
+        height: auto;
+    }
+}
+      @media(max-width:545px) {
+    #location{
+        height: 90px;
+    }
+
+
+    }
+
+
+    @media(max-width:578px)
+    {
+        #locationdiv
+        {
+            width: 70%;
+            margin: auto;
+        }
+    }
+
+    @media(max-width:370px)
+    {
+        #locationdiv
+        {
+            width: 80%;
+            margin: auto;
+        }
+    }
+    </style>
+</head>
+<body>
+
+
+                 
+
+
+    
+    <div class ="fdiv">
+        <div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+            <div><h1 id="header" >GET IN TOUCH</h1></div>
+       
+
+
+          
+                <div  id="myform" class="container">
+            <input type="text" name="" id="Message1" placeholder="Name" class="form-control mt-3" >
+            <span id="formfill1">Fill the Name*</span>
+            <input type="email" name="" id="Message2" placeholder="Email" class="form-control mt-2" >
+            <span id="formfill2">Fill the Email*</span>
+            <input type="text" name="" id="Message3" placeholder="Subject" class="form-control mt-2" >
+            <span id="formfill3">Fill the Subject*</span>
+            <textarea placeholder="Message" id="Message4" class="form-control mt-2" rows="2"></textarea>
+        
+            <span id="formfill4">Fill the Message*</span>
+           
+            <button class="btn  btn-dark mt-2 mb-3 " id="logo" onclick="error()" >Submit</button>
+          
+        </div>
+    
+        
+                </div>
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+          <div id="mapid" class="container pt-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.90248674797!2d67.02166607455482!3d24.867179844990222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e6b1566c46f%3A0x65318f4eb62c7aa8!2sAptech%20Computer%20Education%20Garden%20Center!5e0!3m2!1sen!2s!4v1692969751423!5m2!1sen!2s" width="100%" height="380" style="border: 1px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+
+          </div>
+        </div>
+    </div>
+        </div>
+
+
+
+
+        <!-- location and other section here  -->
+<div class="container">
+ <div class="row">
+                     <!-- Location -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+        <div class="container pt-3" id="locationdiv">
+            <h3   id="logo"> <i class="fa-solid fa-location-dot"  ></i> Location</h3>
+            <span  id="hoverl"> APWA Complex, 1st Floor, Agha Khan 3 Rd, Garden East Saddar Town, Karachi, Sindh 74400, Pakistan></span> 
+            
+        </div>
+                </div>
+                                 <!-- Conatct Us -->
+                <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+                    <div class="container pt-3" id="locationdiv" >
+                        <h3   id="logo"> <i class="fa-solid fa-phone" ></i>   Contact US</h3>
+                        <p >
+                            <span id="hoverl">( +92 ) 327-2472-448</span>  <br>
+                             <span id="hoverl">( +92 ) 300-2298-122</span>   <br>
+                             <span id="hoverl">( +92 ) 306-5726-122</span> <br>
+                             <span id="hoverl">( +92 ) 306-5726-122</span> 
+                             
+                        <p>
+                    </div>
+                            </div>
+                       <!-- Email -->
+                 <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+                                <div id="locationdiv" class="container pt-1">
+                                    <h3   id="logo"> <i class="fa-solid fa-envelope"  ></i>   Email</h3>
+                <p >
+                    <a class="nav-link  " id="hoverl" href="mailto:haseeb@aptechgdn.net">haseeb@aptechgdn.net</a>
+                   <a  class="nav-link  "id="hoverl" href="mailto:haseeb@aptechgdn.net">haseeb@aptechgdn.net</a>
+                    <a  class="nav-link  "id="hoverl" href="mailto:anus@aptechgdn.net">anus@aptechgdn.net</a>
+                       
+              <p>
+                               
+                                </div>
+                                        </div>
+                    <!-- Fb,ins,whats,twitter -->
+                    <div class="col-lg-3 col-md-6 col-sm-6 mt-3">
+                                            <div id="locationdiv" class="container pt-3 ">
+                                                <h3   id="logo"> <i class="fa-solid fa-comments" ></i> Chatroom </h3>
+                                                <p   id="hoverl">
+                                                    click here to chat with our member.
+                                                </p>
+                                                <button class="btn btn-info ml-5">JOIN</button>
+                                           </div>
+                                                    </div>
+ </div>
+        
+</div>        
+
+            
+   
+
+
+         
+
+       
+    <script src="https://kit.fontawesome.com/bff187b4f4.js" crossorigin="anonymous"></script>
+    <script>
+        function error(){
+            var user1 = document.getElementById("Message1").value
+            var user2 = document.getElementById("Message2").value
+            var user3 = document.getElementById("Message3").value
+            var user4 = document.getElementById("Message4").value
+
+        if(user1 ==""){
+            document.getElementById("formfill1").style.display="block"
+            document.getElementById("formfill2").style.display="none"
+            document.getElementById("formfill3").style.display="none"
+            document.getElementById("formfill4").style.display="none"
+            document.getElementById("Message1") .style.border="0.5px solid red"
+        }
+        else if(user2==""){
+            document.getElementById("formfill1").style.display="none"
+            document.getElementById("formfill2").style.display="block"
+            document.getElementById("formfill3").style.display="none"
+            document.getElementById("formfill4").style.display="none"
+            document.getElementById("Message2") .style.border="0.5px solid red"
+        }
+        else if(user3==""){
+            document.getElementById("formfill1").style.display="none"
+            document.getElementById("formfill2").style.display="none"
+            document.getElementById("formfill3").style.display="block"
+            document.getElementById("formfill4").style.display="none"
+            document.getElementById("Message3").style.border="0.5px solid red"
+        }
+        else if(user4==""){
+            document.getElementById("formfill1").style.display="none"
+            document.getElementById("formfill2").style.display="none"
+            document.getElementById("formfill3").style.display="none"
+            document.getElementById("formfill4").style.display="block"
+            document.getElementById("Message4") .style.border="0.5px solid red"
+        }
+    }    
+    </script>
+</body>
+</htm

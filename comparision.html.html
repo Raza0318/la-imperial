@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Comparision</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+<style>
+
+    #first
+    {
+        display: none;
+    
+    }
+    #errormessage
+    {
+        display: none;
+    }
+    #second{
+        display: none;
+    }
+    #third{
+        display: none;
+    }
+    #forth{
+        display: none;
+    }
+    #fifth{
+        display: none;
+    }
+    #six{
+        display: none;
+    }
+    #seven{
+        display: none;
+    }
+    #eight{
+        display: none;
+    }
+    #nine{
+        display: none;
+    }
+    #tv1{
+        border-radius: 90px 50px 110px;
+        background-color:rgb(139, 137, 137);
+    
+    }
+    #baner{
+        width: 100%;
+        
+    }
+    @media(max-width:991px){
+        #tv1{
+            width: 70%;
+        }
+    }
+    @media(max-width:767px){
+        #tv1{
+            width: 95%;
+        }
+    }
+  
+    @media(max-width:482px){
+        #tv1{
+            width: 100%;
+        }
+    }
+  
+    @media(max-width:428px){
+        #tv1{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media(max-width:767px){
+        #tv1{
+            width: 95%;
+        }
+    }
+  
+    @media(max-width:455px){
+        #tv1{
+            width: 80%
+            
+        }
+        img{
+            height: 120px;
+            width: 50%;
+        }
+    }
+  
+    @media(max-width:356px){
+        #tv1{
+            width: 100%;
+        }
+    }
+  
+    @media(max-width:767px){
+        #tv1{
+            width: 95%;
+        }
+    }
+    @media(max-width:358px){
+        #tv1{
+            width: 100%;
+        }
+    }
+  
+    @media(max-width:280px){
+        #tv1{
+            width: 100%;
+        }
+    }
+  
+    @media(max-width:335px){
+        #tv1{
+            width: 100%;
+            font-size: 10px;
+        }
+        img{
+            height: 80px;
+            width: 40%;
+        }
+    }
+    @media(max-width:259px){
+        #tv1{
+            width: 100%;
+            font-size: 8px;
+        }
+        img{
+            height: 70px;
+            width: 30%;
+        }
+    }
+  
+</style>
+</head>
+
+<body style="background-color:white;">
+    <!-- navbar start -->
+     
+            <nav id="oan" class="navbar navbar-expand-lg p-3 fixed-top">
+                <div class="container-fluid">
+                    <a href="">
+                        <img class="navbar-brand" src="e-img/Screenshot_2023-09-23_221614-removebg-preview - Copy.png" alt="LOGO" width="100%" height="120px">
+                    </a>
+                    <button class="navbar-toggler " id="mone" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon tn-light"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav" id="can">
+                          <li class="nav-item ps-5">
+                            <a id="hh" target="_blank" class="nav-link " href="index.html">Home </a>
+                          </li>
+                          <li class="nav-item ps-5">
+                            <a id="hh" target="_blank" class="nav-link" href="about.html.html">About</a>
+                          </li>
+                          <li class="nav-item ps-5">
+                            <a id="hh" target="_blank" class="nav-link" href="#">Brands</a>
+                          </li>
+                          <li class="nav-item ps-5">
+                            <a id="hh" target="_blank" class="nav-link" href="comparision.html.html">Comparision</a>
+                          </li>
+                          <li class="nav-item ps-5">
+                              <a id="hh" target="_blank" class="nav-link" href="contact.html.html">contact-us</a>
+                        </ul>
+
+               
+              
+                </div>
+                </nav> 
+            
+            <!-- navbar close -->
+            <br><br><br>
+  
+  
+<div class="container">
+    <section id="errormessage">
+        <center>
+
+
+            <div class="alert alert-danger d-flex align-items-center w-50 mt-3" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                    <use xlink:href="#exclamation-triangle-fill"/></svg>
+                <div>
+                  Please choose items
+                </div>
+              </div>
+            </center>
+    </section>
+   
+    <div class="row">
+        <div class="col-lg-6 mt-5">
+<select class="form-control" id="selectone">
+    <option value="" disabled selected>Choose changhon ruba Brand</option>
+    <option value="television">Televison</option>
+    <option value="machine">AC</option>
+    <option value="refrigerator">Refrigerator</option>
+</select>
+        </div>
+        <div class="col-lg-6 mt-5">
+          <select class="form-control" id="selecttwo">
+    <option value="" disabled selected>Choose L-G Brand</option>
+    <option value="televisions">Televison</option>
+    <option value="machines">AC</option>
+    <option value="refrigerators">Refrigerator</option>
+</select>  
+        </div>
+
+    </div>
+
+    <button class="btn btn-success mt-3" onclick="myfunct()">Show</button>
+</div>
+
+
+
+
+<section id="first">
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <center>
+            <div id="tv1">
+                <h3>changhon ruba </h3>
+                <img src="e-img/comparision images/one.jpg" alt="" width="50%" height="210px" class="mt-3">
+                <div>
+                    <ul style="list-style-type: none;">                    
+                        <li>Color: White</li>
+                        <li>Active Screen Size	40"</li>
+                        <li>HDR 10 Display</li>
+                        <li>DDR SIZE	1 GB Flash	8GB</li>
+                        <li> Sound bar design (UMax sound 3.0)</li>
+                        <li>Android</li>
+                        <li> price 185$</li>
+                     </ul>
+                </div>
+
+            </div>
+        </center>
+        </div>
+  
+       <div class="col-lg-6">
+        <center>
+        <div id="tv1">
+            <h3>L-G</h3>
+            <img src="e-img/comparision images/LG+UK6300++65INCH+SMART+&+4K+Led+TV+Price+in+Pakistan,+Specifications,+Features_-_23952.webp" alt="" width="50%" class="mt-3" height="210px">
+            <div>
+                 <ul style="list-style-type: none;">                    
+                                        <li>Color: White</li>
+                                        <li>Active Screen Size	65"</li>
+                                        <li>HDR 10 Display</li>
+                                        <li>Resolution 4k UHD</li>
+                                        <li>Bluetooth $ wifi support</li>
+                                        <li>Android</li>
+                                        <li> price 120$</li>
+                                     </ul>
+            </div>
+
+        </div>
+    </center>
+    </div>
+     
+
+
+
+
+
+
+
+    </div>
+   </div>
+</section>
+
+
+
+<section id="second">
+    <div class="container">
+     <div class="row">
+         <div class="col-lg-6">
+             <center>
+             <div id="tv1">
+                 <h3>changhon ruba </h3>
+                 <img src="e-img/comparision images/one.jpg" alt="" width="50%" class="mt-3" height="200px" class="mt-3">
+                 <div>
+                     <ul style="list-style-type: none;">                    
+                         <li>Color: White</li>
+                         <li>Active Screen Size	40"</li>
+                         <li>HDR 10 Display</li>
+                         <li>DDR SIZE	1 GB Flash	8GB</li>
+                         <li> Sound bar design (U Max sound 3.0)</li>
+                         <li>price 185$</li>
+                      </ul>
+                 </div>
+ 
+             </div>
+         </center>
+         </div>
+   
+        <div class="col-lg-6">
+         <center>
+         <div  id="tv1">
+             <h3>L-G</h3>
+             <img src="e-img/comparision images/ac-lg-a18cmhsggf.jpg" alt="" width="53%" class="mt-3" height="210px"  class="mt-3">
+             <div>
+                  <ul style="list-style-type: none;">                    
+                                         <li>Color: gray</li>
+                                         <li>DUAL Inverter Compressor"</li>
+                                         <li>70% Energy Saving</li>
+                                         <li>40% Faster Cooling</li>
+                                         <li> 10 years compressor warranty</li>
+                                         <li> price 200$</li>
+                                      </ul>
+             </div>
+ 
+         </div>
+     </center>
+     </div>
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     </div>
+    </div>
+ </section>
+
+ <section id="third">
+    <div class="container">
+     <div class="row">
+         <div class="col-lg-6">
+             <center>
+             <div id="tv1">
+                 <h3>changhon ruba </h3>
+                 <img src="e-img/comparision images/one.jpg" alt="" width="50%" class="mt-3" height="200px">
+                 <div>
+                     <ul style="list-style-type: none;">                    
+                         <li>Color: White</li>
+                         <li>Active Screen Size	40"</li>
+                         <li>HDR 10 Display</li>
+                         <li>DDR SIZE	1 GB Flash	8GB</li>
+                         <li> Sound bar design (U Max sound 3.0)</li>
+                         <li>price 185$</li>
+                      </ul>
+                 </div>
+ 
+             </div>
+         </center>
+         </div>
+   
+        <div class="col-lg-6">
+         <center>
+         <div id="tv1">
+             <h3>L-G </h3>
+             <img src="e-img/comparision images/Lg-Side-by-Side-Refrigerator-GC-L257JLYL-Smart-Inverter.jpg" alt="" width="30%" height="210px">
+             <div>
+                  <ul style="list-style-type: none;">                    
+                                         <li>Color: gray</li>
+                                         <li>Model: GC-L257JLYL</li>
+                                         <li>Capacity(Gross/Net): 673L / 610L</li>
+                                         <li>Dimension: mm (WxHxD)913 x 1,790 x 735</li>
+                                         <li> Finishing: Platinum Silver 3</li>
+                                         <li>price 190$</li>
+                                      </ul>
+             </div>
+ 
+         </div>
+     </center>
+     </div>
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     </div>
+    </div>
+ </section>
+
+ <section id="forth">
+    <div class="container">
+     <div class="row">
+         <div class="col-lg-6">
+             <center>
+             <div id="tv1">
+                 <h3>changhon ruba </h3>
+                 <img src="e-img/comparision images/changhong-ruba-Inverter-min-1.jpg" alt="" width="40%" height="180px" class="mt-3">
+                 <div>
+                     <ul style="list-style-type: none;">                    
+                         <li>Color: golden brown</li>
+                         <li>Full DC Inverter</li>
+                         <li>Cooling Capacity: 1.5Ton</li>
+                         <li>3 in 1 filter</li>
+                         <li>T3 Compressor Supports up to 53C</li>
+                         <li>price 220$</li>
+                      </ul>
+                 </div>
+ 
+             </div>
+         </center>
+         </div>
+   
+        <div class="col-lg-6">
+         <center>
+         <div id="tv1">
+             <h3>L-G</h3>
+             <img src="e-img/comparision images/ac-lg-a18cmhsggf.jpg" alt="" width="40%" height="180px"  class="mt-3">
+             <div>
+                <ul style="list-style-type: none;">                    
+                    <li>Color: gray</li>
+                    <li>DUAL Inverter Compressor"</li>
+                    <li>70% Energy Saving</li>
+                    <li>40% Faster Cooling</li>
+                    <li> 10 years compressor warranty</li>
+                    <li> price 200$</li>
+                 </ul>
+             </div>
+ 
+         </div>
+     </center>
+     </div>
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     </div>
+    </div>
+ </section>
+
+
+ <section id="fifth">
+    <div class="container">
+     <div class="row">
+         <div class="col-lg-6">
+             <center>
+                <div id="tv1">
+                    <h3>changhon ruba </h3>
+                    <img src="e-img/comparision images/changhong-ruba-Inverter-min-1.jpg" alt="" width="50%" height="235px" class="mt-3">
+                    <div>
+                        <ul style="list-style-type: none;">                    
+                            <li>Color: golden brown</li>
+                            <li>Full DC Inverter</li>
+                            <li>Cooling Capacity: 1.5Ton</li>
+                            <li>3 in 1 filter</li>
+                            <li>T3 Compressor Supports up to 53C</li>
+                            <li>price 220$</li>
+                         </ul>
+                    </div>
+    
+                </div>
+         </center>
+         </div>
+   
+        <div class="col-lg-6">
+         <center>
+            <div id="tv1">
+                <h3>L-G</h3>
+                <img src="e-img/comparision images/LG+UK6300++65INCH+SMART+&+4K+Led+TV+Price+in+Pakistan,+Specifications,+Features_-_23952.webp" alt="" width="50%" class="mt-3" height="210px">
+                <div>
+                     <ul style="list-style-type: none;">                    
+                                            <li>Color: White</li>
+                                            <li>Active Screen Size	65"</li>
+                                            <li>HDR 10 Display</li>
+                                            <li>Resolution 4k UHD</li>
+                                            <li>Bluetooth $ wifi support</li>
+                                            <li>Android</li>
+                                            <li> price 120$</li>
+                                         </ul>
+                </div>
+    
+            </div>
+     </center>
+     </div>
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     </div>
+    </div>
+ </section>
+
+
+ <section id="six">
+    <div class="container">
+     <div class="row">
+         <div class="col-lg-6">
+             <center>
+                <div id="tv1">
+                    <h3>changhon ruba </h3>
+                    <img src="e-img/comparision images/changhong-ruba-Inverter-min-1.jpg" alt="" width="50%" height="200px" class="mt-3">
+                    <div>
+                        <ul style="list-style-type: none;">                    
+                            <li>Color: golden brown</li>
+                            <li>Full DC Inverter</li>
+                            <li>Cooling Capacity: 1.5Ton</li>
+                            <li>3 in 1 filter</li>
+                            <li>T3 Compressor Supports up to 53C</li>
+                            <li>price 220$</li>
+                         </ul>
+                    </div>
+    
+                </div>
+         </center>
+         </div>
+   
+        <div class="col-lg-6">
+         <center>
+            <div id="tv1">
+                <h3>L-G </h3>
+                <img src="e-img/comparision images/Lg-Side-by-Side-Refrigerator-GC-L257JLYL-Smart-Inverter.jpg" alt="" width="30%" height="210px">
+                <div>
+                     <ul style="list-style-type: none;">                    
+                                            <li>Color: gray</li>
+                                            <li>Model: GC-L257JLYL</li>
+                                            <li>Capacity(Gross/Net): 673L / 610L</li>
+                                            <li>Dimension: mm (WxHxD)913 x 1,790 x 735</li>
+                                            <li> Finishing: Platinum Silver 3</li>
+                                            <li>price 190$</li>
+                                         </ul>
+                </div>
+    
+            </div>
+     </center>
+     </div>
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     </div>
+    </div>
+ </section>
+
+
+ <section id="seven">
+    <div class="container">
+     <div class="row">
+         <div class="col-lg-6">
+             <center>
+                <div id="tv1">
+                    <h3>changhon ruba </h3>
+                    <img src="e-img/comparision images/changhong-ruba-direct-cool-2-door-refrigerator-chr-dd279gdrt.jpg" alt="" width="30%" height="200px" class="mt-3">
+                    <div>
+                        <ul style="list-style-type: none;">                    
+                            <li>Color: Red</li>
+                            <li>5 Way Rapid Cooling System</li>
+                            <li>Wider Voltage working in 187-252V</li>
+                            <li>Super wide vegetable and fruit crisper</li>
+                            <li>Removable deluxe Handles</li>
+                            <li>price 175$</li>
+                         </ul>
+                    </div>
+    
+                </div>
+         </center>
+         </div>
+   
+        <div class="col-lg-6">
+         <center>
+            <div id="tv1">
+                <h3>L-G </h3>
+                <img src="e-img/comparision images/Lg-Side-by-Side-Refrigerator-GC-L257JLYL-Smart-Inverter.jpg" alt="" width="30%" height="210px">
+                <div>
+                     <ul style="list-style-type: none;">                    
+                                            <li>Color: gray</li>
+                                            <li>Model: GC-L257JLYL</li>
+                                            <li>Capacity(Gross/Net): 673L / 610L</li>
+                                            <li>Dimension: mm (WxHxD)913 x 1,790 x 735</li>
+                                            <li> Finishing: Platinum Silver 3</li>
+                                            <li>price 190$</li>
+                                         </ul>
+                </div>
+    
+            </div>
+     </center>
+     </div>
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     </div>
+    </div>
+ </section>
+
+ <section id="eight">
+    <div class="container">
+     <div class="row">
+         <div class="col-lg-6">
+             <center>
+                <div id="tv1">
+                    <h3>changhon ruba </h3>
+                    <img src="e-img/comparision images/changhong-ruba-direct-cool-2-door-refrigerator-chr-dd279gdrt.jpg" alt="" width="40%" height="235px" class="mt-3">
+                    <div>
+                        <ul style="list-style-type: none;">                    
+                            <li>Color: Red</li>
+                            <li>5 Way Rapid Cooling System</li>
+                            <li>Wider Voltage working in 187-252V</li>
+                            <li>Super wide vegetable and fruit crisper</li>
+                            <li>Removable deluxe Handles</li>
+                            <li>price 175$</li>
+                         </ul>
+                    </div>
+    
+                </div>
+         </center>
+         </div>
+   
+        <div class="col-lg-6">
+         <center>
+            <div id="tv1">
+                <h3>L-G</h3>
+                <img src="e-img/comparision images/LG+UK6300++65INCH+SMART+&+4K+Led+TV+Price+in+Pakistan,+Specifications,+Features_-_23952.webp" alt="" width="50%" class="mt-3" height="210px">
+                <div>
+                     <ul style="list-style-type: none;">                    
+                                            <li>Color: White</li>
+                                            <li>Active Screen Size	65"</li>
+                                            <li>HDR 10 Display</li>
+                                            <li>Resolution 4k UHD</li>
+                                            <li>Bluetooth $ wifi support</li>
+                                            <li>Android</li>
+                                            <li> price 120$</li>
+                                         </ul>
+                </div>
+    
+            </div>
+     </center>
+     </div>
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     </div>
+    </div>
+ </section>
+
+ <section id="nine">
+    <div class="container">
+     <div class="row">
+         <div class="col-lg-6">
+             <center>
+                <div id="tv1">
+                    <h3>changhon ruba </h3>
+                    <img src="e-img/comparision images/changhong-ruba-direct-cool-2-door-refrigerator-chr-dd279gdrt.jpg" alt="" width="30%" height="200px" class="mt-3">
+                    <div>
+                        <ul style="list-style-type: none;">                    
+                            <li>Color: Red</li>
+                            <li>5 Way Rapid Cooling System</li>
+                            <li>Wider Voltage working in 187-252V</li>
+                            <li>Super wide vegetable and fruit crisper</li>
+                            <li>Removable deluxe Handles</li>
+                            <li>price 175$</li>
+                         </ul>
+                    </div>
+    
+                </div>
+         </center>
+         </div>
+   
+        <div class="col-lg-6">
+         <center>
+            <div id="tv1">
+                <h3>L-G</h3>
+                <img src="e-img/comparision images/ac-lg-a18cmhsggf.jpg" alt="" width="40%" height="180px"  class="mt-3">
+                <div>
+                   <ul style="list-style-type: none;">                    
+                       <li>Color: gray</li>
+                       <li>DUAL Inverter Compressor"</li>
+                       <li>70% Energy Saving</li>
+                       <li>40% Faster Cooling</li>
+                       <li> 10 years compressor warranty</li>
+                       <li> price 200$</li>
+                    </ul>
+                </div>
+    
+            </div>
+     </center>
+     </div>
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     </div>
+    </div>
+ </section>
+
+  
+ <script>
+
+    function myfunct()
+    {
+        var select1 = document.getElementById("selectone").value;
+        var select2 = document.getElementById("selecttwo").value;
+
+       if(select1 == ("television") && select2 ==("televisions"))
+       {
+     document.getElementById("first").style.display="block"
+      document.getElementById("second").style.display="none"
+       document.getElementById("third").style.display="none"
+        document.getElementById("forth").style.display="none"
+         document.getElementById("fifth").style.display="none"
+          document.getElementById("six").style.display="none"
+           document.getElementById("seven").style.display="none"
+            document.getElementById("eight").style.display="none"
+             document.getElementById("nine").style.display="none"
+             document.getElementById("errormessage").style.display="none"
+       }
+       
+       else if(select1 == "television" && select2 == "machines")
+        {
+            document.getElementById("second").style.display="block"
+            document.getElementById("first").style.display="none"
+            document.getElementById("errormessage").style.display="none"
+       document.getElementById("third").style.display="none"
+        document.getElementById("forth").style.display="none"
+         document.getElementById("fifth").style.display="none"
+          document.getElementById("six").style.display="none"
+           document.getElementById("seven").style.display="none"
+            document.getElementById("eight").style.display="none"
+             document.getElementById("nine").style.display="none"
+        }
+       if( select1 ==("television") && select2 == ("refrigerators")  )
+       {
+        document.getElementById("third").style.display="block"
+        document.getElementById("first").style.display="none"
+      document.getElementById("second").style.display="none"
+      document.getElementById("errormessage").style.display="none"
+        document.getElementById("forth").style.display="none"
+         document.getElementById("fifth").style.display="none"
+          document.getElementById("six").style.display="none"
+           document.getElementById("seven").style.display="none"
+            document.getElementById("eight").style.display="none"
+             document.getElementById("nine").style.display="none"
+       }
+        if(select1 == ("machine") && select2 == ("machines"))
+        {
+            document.getElementById("forth").style.display="block"
+            document.getElementById("first").style.display="none"
+      document.getElementById("second").style.display="none"
+       document.getElementById("third").style.display="none"
+       document.getElementById("errormessage").style.display="none"
+         document.getElementById("fifth").style.display="none"
+          document.getElementById("six").style.display="none"
+           document.getElementById("seven").style.display="none"
+            document.getElementById("eight").style.display="none"
+             document.getElementById("nine").style.display="none"
+        }
+        if(select1 == ("machine" ) && select2 == ("televisions"))
+        {
+            document.getElementById("fifth").style.display="block"
+            document.getElementById("first").style.display="none"
+      document.getElementById("second").style.display="none"
+       document.getElementById("third").style.display="none"
+        document.getElementById("forth").style.display="none"
+        document.getElementById("errormessage").style.display="none"
+          document.getElementById("six").style.display="none"
+           document.getElementById("seven").style.display="none"
+            document.getElementById("eight").style.display="none"
+             document.getElementById("nine").style.display="none"
+           
+        }
+        if(select1 == ("machine") && select2 == ("refrigerators"))
+        {
+            document.getElementById("six").style.display="block"
+            document.getElementById("first").style.display="none"
+      document.getElementById("second").style.display="none"
+       document.getElementById("third").style.display="none"
+        document.getElementById("forth").style.display="none"
+         document.getElementById("fifth").style.display="none"
+         document.getElementById("errormessage").style.display="none"
+           document.getElementById("seven").style.display="none"
+            document.getElementById("eight").style.display="none"
+             document.getElementById("nine").style.display="none"
+            
+        }
+        if(select1 == ("refrigerator") && select2 == ("refrigerators"))
+        {
+            document.getElementById("seven").style.display="block"
+            document.getElementById("first").style.display="none"
+      document.getElementById("second").style.display="none"
+       document.getElementById("third").style.display="none"
+        document.getElementById("forth").style.display="none"
+         document.getElementById("fifth").style.display="none"
+          document.getElementById("six").style.display="none"
+          document.getElementById("errormessage").style.display="none"
+            document.getElementById("eight").style.display="none"
+             document.getElementById("nine").style.display="none"
+            
+        }
+        if(select1 == ("refrigerator") && select2 == ("televisions"))
+        {
+            document.getElementById("eight").style.display="block"
+            document.getElementById("first").style.display="none"
+      document.getElementById("second").style.display="none"
+       document.getElementById("third").style.display="none"
+        document.getElementById("forth").style.display="none"
+         document.getElementById("fifth").style.display="none"
+          document.getElementById("six").style.display="none"
+           document.getElementById("seven").style.display="none"
+           document.getElementById("errormessage").style.display="none"
+             document.getElementById("nine").style.display="none"
+            
+        }
+        if(select1 == ("refrigerator") && select2 == ("machines"))
+        {
+            document.getElementById("nine").style.display="block"
+            document.getElementById("first").style.display="none"
+      document.getElementById("second").style.display="none"
+       document.getElementById("third").style.display="none"
+        document.getElementById("forth").style.display="none"
+         document.getElementById("fifth").style.display="none"
+          document.getElementById("six").style.display="none"
+           document.getElementById("seven").style.display="none"
+            document.getElementById("eight").style.display="none"
+            document.getElementById("errormessage").style.display="none"
+            
+        }
+      
+      if(select1 == ("") && select2 ==(""))
+
+       {
+        document.getElementById("errormessage").style.display="block"
+       }
+    }
+ </script>
+</body>
+
+</html>
